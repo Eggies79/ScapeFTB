@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0a9b43d780b9d47b8ff656dfedbca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 5
-  moveSpeed: 3
+  jumpSpeed: 4.2
+  moveSpeed: 2.2
   betterJump: 1
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6def71361075c45883416defc326d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableSelectCharacter: 0
   playerSelected: 0
   animator: {fileID: 4944913452709801163}
   spriteRenderer: {fileID: 392556093471160829}
