@@ -11,12 +11,12 @@ public class CheckGround : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             isGrounded = true;
-            Debug.Log("Grounded");
+            //Debug.Log("Grounded");
         }
         else
         {
             isGrounded = false;
-            Debug.Log("Airborne");
+            //Debug.Log("Airborne");
         }
 
         
@@ -24,6 +24,6 @@ public class CheckGround : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isGrounded= false;
-        Debug.Log("Airborne");
+        //Debug.Log("Airborne");
     }
 }
