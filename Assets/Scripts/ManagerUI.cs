@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class ManagerUI : MonoBehaviour
 {
     public GameObject panelOptions;
+    public GameObject panelSkins;
+    public GameObject player;
     public void PanelOptions()
     {
         Time.timeScale = 0;
@@ -30,12 +32,30 @@ public class ManagerUI : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void ExitGame()
+    public void ChangeSkin()
     {
-        //This works only when built aka (exe) not on unity. Uncomment when building
-        //Application.Quit();
+        panelOptions.SetActive(false);
+        panelSkins.SetActive(true);
+    }
+
+    public void setPlayerAstronaut()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "Astronaut");
+        resetPlayerSkin();
+    }
+
+    public void setPlayerSCP()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "SCP");
+        resetPlayerSkin();
+    }
+
+    void resetPlayerSkin()
+    {
         Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
+        panelSkins.gameObject.SetActive(false);
+        player.GetComponent<PlayerSelect>().ChangePlayerInMenu();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 
