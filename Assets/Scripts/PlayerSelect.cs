@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSelect : MonoBehaviour
 {
     public bool enableSelectCharacter;
-    public enum Player {Astronaut, Scp}
+    public enum Player {Astro, Bolo, Red}
     public Player playerSelected;   
 
     public Animator animator;
@@ -25,13 +25,17 @@ public class PlayerSelect : MonoBehaviour
         {
             switch (playerSelected)
             {
-                case Player.Astronaut:
+                case Player.Astro:
                     spriteRenderer.sprite = playersSprite[0];
                     animator.runtimeAnimatorController = playersController[0];
                     break;
-                case Player.Scp:
+                case Player.Bolo:
                     spriteRenderer.sprite = playersSprite[1];
                     animator.runtimeAnimatorController = playersController[1];
+                    break;
+                case Player.Red:
+                    spriteRenderer.sprite = playersSprite[2];
+                    animator.runtimeAnimatorController = playersController[2];
                     break;
                 default:
                     break;
@@ -44,13 +48,17 @@ public class PlayerSelect : MonoBehaviour
     {
         switch (PlayerPrefs.GetString("PlayerSelected"))
         {
-            case "Astronaut":
+            case "Astro":
                 spriteRenderer.sprite = playersSprite[0];
                 animator.runtimeAnimatorController = playersController[0];
                 break;
-            case "SCP":
+            case "Bolo":
                 spriteRenderer.sprite = playersSprite[1];
                 animator.runtimeAnimatorController = playersController[1];
+                break;
+            case "Red":
+                spriteRenderer.sprite = playersSprite[2];
+                animator.runtimeAnimatorController = playersController[2];
                 break;
             default:
                 break;

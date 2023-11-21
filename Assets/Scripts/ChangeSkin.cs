@@ -24,15 +24,21 @@ public class ChangeSkin : MonoBehaviour
         skinsPanel.gameObject.SetActive(false);
         inDoor = false;
     }
-    public void setPlayerAstronaut()
+    public void setPlayerAstro()
     {
-        PlayerPrefs.SetString("PlayerSelected", "Astronaut");
+        PlayerPrefs.SetString("PlayerSelected", "Astro");
         resetPlayerSkin();
     }
 
-    public void setPlayerSCP()
+    public void setPlayerBolo()
     {
-        PlayerPrefs.SetString("PlayerSelected", "SCP");
+        PlayerPrefs.SetString("PlayerSelected", "Bolo");
+        resetPlayerSkin();
+    }
+
+    public void setPlayerRed()
+    {
+        PlayerPrefs.SetString("PlayerSelected", "Red");
         resetPlayerSkin();
     }
 
