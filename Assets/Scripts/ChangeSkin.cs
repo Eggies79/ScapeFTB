@@ -7,7 +7,7 @@ public class ChangeSkin : MonoBehaviour
 {
     public GameObject skinsPanel;
 
-    private bool inDoor;
+    //private bool inDoor;
 
     public GameObject player;
 
@@ -16,13 +16,13 @@ public class ChangeSkin : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             skinsPanel.gameObject.SetActive(true);
-            inDoor = true;
+            //inDoor = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         skinsPanel.gameObject.SetActive(false);
-        inDoor = false;
+        //inDoor = false;
     }
     public void setPlayerAstro()
     {
