@@ -17,7 +17,7 @@ public class ItemManager : MonoBehaviour
         if(transform.childCount == 1)
         {
             Debug.Log("All items collected");
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("00_MainHall");
         }
     }
 }

@@ -24,12 +24,12 @@ public class ManagerUI : MonoBehaviour
     public void ExitLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("00_MainHall");
     }
     public void ExitMainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("00_MainMenu");
     }
 
     public void ChangeSkin()
