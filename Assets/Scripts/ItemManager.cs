@@ -12,9 +12,14 @@ public class ItemManager : MonoBehaviour
     {
         itemsInlevel = transform.childCount;
     }
+
+    private void Update()
+    {
+        AllItemsCollected();
+    }
     public void AllItemsCollected()
     {
-        if(transform.childCount == 1)
+        if(transform.childCount == 0)
         {
             Debug.Log("All items collected");
             SceneManager.LoadScene("00_MainHall");
