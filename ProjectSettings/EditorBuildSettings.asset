@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/03_Platforms.unity
     guid: 6c2689441f05cf2428d5bf9de207fda2
   - enabled: 1
-    path: Assets/Scenes/04.unity
+    path: Assets/Scenes/04_Fire.unity
     guid: 1c9e2856a26496e4499c1724b98fd756
   - enabled: 1
     path: Assets/Scenes/05_Sensor.unity
