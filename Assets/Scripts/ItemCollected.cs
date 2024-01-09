@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class ItemCollected : MonoBehaviour
 {
+    public DataController data;
     //
-    public new string name = "name";//puede servir como identificador
-    public bool collected = false;//texto de ejemplo aqui debemos sacar la info del objeto del html
+    public int id;//puede servir como identificador
+    public bool collected;// = data.datos.coinCollected;//texto de ejemplo aqui debemos sacar la info del objeto del html
 
     private void Start()
     {
