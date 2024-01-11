@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/05_Sensor.unity
     guid: cf47a3c5e6baedd40b424e43fa8714b0
+  - enabled: 1
+    path: Assets/Scenes/00IntroScene.unity
+    guid: a418fa43164b3da428166b06bc5e895c
   m_configObjects: {}
